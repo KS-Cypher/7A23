@@ -1,0 +1,76 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Naa Madhi 
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+          p THIRU
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Song Details
+            .panel-body
+              p Dhanunjay Seepana
+              p Srinivas Mouli
+              p Anirudh Ravichander
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title source
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp; Adithya Music
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Song Link
+            .panel-body
+              img.img-responsive.img-rounded(src='https://wynk.in/music/song/naa-madhi/or_197188691516_QMBZ92268162?autoplay=true')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Song reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor A Manikanta
+                    small.reviewTimestamp 16 July 2013
+                  .col-xs-12
+                    p What a great song.Fabulous loved it.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor D Karthik
+                    small.reviewTimestamp 16 June 2023
+                  .col-xs-12
+                    p Totally fell in love with this song.
+    .col-xs-12.col-md-3
+      p.lead
+        | this song is from THIRU movie,has great lyrics.
+      p
+        | If you've listened and you like it - or if you don't - please leave a review to help other people just like you.

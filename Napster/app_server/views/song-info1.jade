@@ -1,0 +1,76 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Na Roja Nuvve
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+          p Hesham Abdul Wahab
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title song description
+            .panel-body
+              p Movie name:-KUSHI
+              p Producer:- Shiva Nirvana
+              p Written:-Hesham Abdul Wahab
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Source
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Saregama India Ltd
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Song Link
+            .panel-body
+              img.img-responsive.img-rounded(src='https://wynk.in/music/song/na-roja-nuvve/sa_8907212006751_INH102306927?autoplay=true')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add review
+              h2.panel-title Song reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor A Goutham Sai
+                    small.reviewTimestamp 16 July 2023
+                  .col-xs-12
+                    p What a great song. I totally loved it.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor G Sai Madhav
+                    small.reviewTimestamp 16 June 2023
+                  .col-xs-12
+                    p It was good.I want to learn the song.
+    .col-xs-12.col-md-3
+      p.lead
+        | This song is from kushi movie written and sang by Hesham Abdul Wahab with help of Shiv Nirvana.
+      p
+        | Listen to the song and share you views,You will totally love it.

@@ -1,0 +1,95 @@
+doctype html
+html
+  head
+    meta(name='Viewport', content='width=device-width',intial-scale=1.0)
+
+    title= title
+  
+    link(rel='stylesheet',href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='icon', type='image/png', sizes='192x192', href='/images/android-chrome-192x192.png') // Adjust the path to your favicon image
+    link(rel='manifest', href='/site.webmanifest')
+    link(href="https://cdn.jsdelivr.net/npm/simplebar@5.3.0/dist/simplebar.min.css", rel="stylesheet")
+    script(src="https://cdn.jsdelivr.net/npm/simplebar@5.3.0/dist/simplebar.min.js")
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+
+    style.
+      /* Custom styles */
+      body {
+        background-color: #a68ee3;
+      }
+      .simplebar-scrollbar::before {
+        background-color: #db2a62;
+      }
+      .simplebar-track.simplebar-horizontal {
+        background-color: #db2a62;
+      }
+      .simplebar-track.simplebar-vertical {
+        background-color: ivory;
+      }
+      .navbar-custom {
+        background-color: #a68ee3;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .navbar-custom .navbar-brand {
+        color: #f06292;
+        font-size: 24px;
+        font-family: 'Pacifico', cursive;
+      }
+      .navbar-custom .nav-link {
+        color: #fffff0;
+        font-size: 16px;
+        transition: color 0.3s;
+      }
+      .navbar-custom .nav-link:hover {
+        color: #f06292;
+      }
+      /* Increase the size of the navbar brand text */
+      .navbar-brand {
+        font-size: 30px; /* Adjust the font size to your desired size */
+      }
+
+      .navbar-default{
+        background-color: #f9f08b;
+        border-color: #557ad3;
+
+      }
+      /* Set background color for index page */
+      .index-page {
+        background-color: #f06292;
+        color: #f7f454;
+        padding: 50px;
+      }
+
+
+
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+        bg-color: #f7f454
+          a.navbar-brand(href='/') Napster*
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar-main.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li 
+              a(href='/about/') About
+            li 
+              a(href='/signin') SignIn
+            li 
+              a(href='/register') register
+    .container
+      block content
+      footer
+        .row
+          .col-xs-12
+            small &copy;7A2328
+      
+
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')

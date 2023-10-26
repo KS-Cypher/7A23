@@ -1,0 +1,75 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Mastaru Mastaru
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+          p SIR
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title song info
+            .panel-body
+              p G v Prakash
+              p Swetha Mohan
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Song source
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Aditya music
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Song link
+            .panel-body
+              img.img-responsive.img-rounded(src='https://www.youtube.com/watch?v=7JBPq28O0sY')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/song/review/new') Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor B Vardhan Kumar
+                    small.reviewTimestamp 29 July 2013
+                  .col-xs-12
+                    p What a great song. I can't say enough good things about it.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor A Krishna Vamshi
+                    small.reviewTimestamp 16 June 2023
+                  .col-xs-12
+                    p The song was good not gonna lie.
+    .col-xs-12.col-md-3
+      p.lead
+        | It was a masterpiece
+      p
+        | I mean its alright.
