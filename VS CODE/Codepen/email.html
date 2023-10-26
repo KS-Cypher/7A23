@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Email Validation
+        </title>
+        <style>
+            
+.error {
+    background: red;
+    color: white;
+    padding: 2px;
+}
+
+.success {
+    background: green;
+    color: white;
+    padding: 2px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="email" name="" placeholder="Enter email">
+            <span class="message success" style="display: none;">Valid email!</span>
+            <span class="message error" style="display: none;">Invalid email!</span>     
+          </div>
+          <script>
+            $(function(){
+  var regExp = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+
+  $('[type="email"]').on('keyup', function() {
+    $('.message').hide();
+    regExp.test( $(this).val() ) ? $('.message.success').show() : $('.message.error').show();
+  });
+
+});
+          </script>
+    </body>
+</html>

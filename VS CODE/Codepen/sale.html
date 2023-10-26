@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>
+            SALE!!!
+        </title>
+    </head>
+    <style>
+        
+body{
+	text-align: center;
+	background: black;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+    </style>
+    <body>
+        <div id="clockdiv">
+            <div>
+              <div class="smalltext">SALE ENDS IN</div>
+            </div>
+            <br><br>
+            <div>
+              <span id="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span id="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span id="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
+    </body>
+</html>
