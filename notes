@@ -1,0 +1,23 @@
+REST stands for REpresentational State Transfer, and it's an architectural style for designing networked applications.
+
+API stands for Application Program Interface, which defines the methods and data formats that applications can use to communicate with each other.
+
+A REST API is a stateless interface to an application. It means that each request from a client to a server must contain all the information needed to understand and process the request. There is no session or history kept on the server between requests.
+
+REST APIs follow a set of standards and conventions to define how resources are identified and manipulated. They use HTTP methods like GET, POST, PUT, and DELETE to perform actions on resources.
+
+A REST API typically takes an incoming HTTP request, processes it on the server, and then sends back an HTTP response to the client.
+
+REST APIs are commonly used to connect the frontend and backend of web applications, allowing them to communicate and exchange data.
+
+Request URLs in a REST API have a standard format. They are structured based on the resources or collections in your database. You might have different URLs for different collections or subdocuments.
+
+Common operations in a REST API include:
+
+Create a new item: This is typically done using the HTTP POST method.
+Read a list of several items: Typically done using the HTTP GET method.
+Update a specific item: Usually done with the HTTP PUT or PATCH method.
+Delete a specific item: Done using the HTTP DELETE method.
+Request methods are the HTTP methods used to perform actions on resources in a REST API. The most common method is GET, which is used to retrieve data. Other methods like POST, PUT, PATCH, and DELETE are used for creating, updating, and deleting data.
+
+An API URL Path is the address that allows you to access the various features of an API. It defines the resource you want to interact with and the action you want to perform on that resource.
